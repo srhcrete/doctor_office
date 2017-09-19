@@ -13,13 +13,6 @@ describe(Doctor) do
     end
   end
 
-  describe('#initialize') do
-    it('create a new doctor object with name, specialty, and id')do
-      doctor = Doctor.new({:name => "Dr. Magoo", :specialty => "Optometry", :id => nil})
-      expect(doctor.name).to eq("Dr. Magoo")
-    end
-  end
-
   describe("#name") do
     it("tells you its name") do
       doctor = Doctor.new({:name => "Dr. Magoo", :specialty => "Optometry", :id => nil})
